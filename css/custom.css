@@ -1,0 +1,257 @@
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+#header {
+    padding: 9em 0 9em 0;
+    background-color: #4686a0;
+    color: rgba(255, 255, 255, 0.75);
+    background-attachment: fixed, fixed, fixed;
+    background-color: grey;
+    background-position: top left, center center, center center;
+    background-size: auto, cover, cover;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+  }
+
+    #header a {
+      border-bottom-color: rgba(255, 255, 255, 0.5);
+    }
+
+      #header a:hover {
+        color: #ffffff;
+      }
+
+    #header h1, #header h2, #header h3, #header h4, #header h5, #header h6, #header strong, #header b {
+      color: #ffffff;
+    }
+
+    #header header.major:after {
+      background: #ffffff;
+    }
+
+    #header input[type="submit"],
+    #header input[type="reset"],
+    #header input[type="button"],
+    #header button,
+    #header .button {
+      box-shadow: inset 0 0 0 1px #ffffff;
+      color: #ffffff !important;
+    }
+
+      #header input[type="submit"]:hover,
+      #header input[type="reset"]:hover,
+      #header input[type="button"]:hover,
+      #header button:hover,
+      #header .button:hover {
+        background-color: rgba(255, 255, 255, 0.125);
+      }
+
+      #header input[type="submit"]:active,
+      #header input[type="reset"]:active,
+      #header input[type="button"]:active,
+      #header button:active,
+      #header .button:active {
+        background-color: rgba(255, 255, 255, 0.25);
+      }
+
+      #header input[type="submit"].special,
+      #header input[type="reset"].special,
+      #header input[type="button"].special,
+      #header button.special,
+      #header .button.special {
+        background-color: #ffffff;
+        box-shadow: inset 0 0 0 1px #ffffff !important;
+        color: #4686a0 !important;
+      }
+
+        #header input[type="submit"].special:hover,
+        #header input[type="reset"].special:hover,
+        #header input[type="button"].special:hover,
+        #header button.special:hover,
+        #header .button.special:hover {
+          background-color: rgba(255, 255, 255, 0.125) !important;
+          color: #ffffff !important;
+        }
+
+        #header input[type="submit"].special:active,
+        #header input[type="reset"].special:active,
+        #header input[type="button"].special:active,
+        #header button.special:active,
+        #header .button.special:active {
+          background-color: rgba(255, 255, 255, 0.25) !important;
+        }
+
+    #header h1 {
+      margin: 0;
+    }
+
+    #header p {
+      margin: 1em 0 0 0;
+    }
+
+    #header .actions {
+      margin: 2.5em 0 0 0;
+      position: relative;
+    }
+
+      #header .actions:after {
+        background: #ffffff;
+        content: '';
+        height: 100vh;
+        left: 50%;
+        position: absolute;
+        top: 100%;
+        width: 1px;
+      }
+
+    #header .inner {
+      -moz-transition: -moz-transform 1.5s ease, opacity 2s ease;
+      -webkit-transition: -webkit-transform 1.5s ease, opacity 2s ease;
+      -o-transition: -o-transform 1.5s ease, opacity 2s ease;
+      -ms-transition: -ms-transform 1.5s ease, opacity 2s ease;
+      transition: transform 1.5s ease, opacity 2s ease;
+      -moz-transition-delay: 0.25s;
+      -webkit-transition-delay: 0.25s;
+      -o-transition-delay: 0.25s;
+      -ms-transition-delay: 0.25s;
+      transition-delay: 0.25s;
+      -moz-transform: scale(1);
+      -webkit-transform: scale(1);
+      -o-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+      position: relative;
+      z-index: 1;
+    }
+
+      #header .inner .actions {
+        -moz-transition: -moz-transform 1.25s ease;
+        -webkit-transition: -webkit-transform 1.25s ease;
+        -o-transition: -o-transform 1.25s ease;
+        -ms-transition: -ms-transform 1.25s ease;
+        transition: transform 1.25s ease;
+        -moz-transition-delay: 1s;
+        -webkit-transition-delay: 1s;
+        -o-transition-delay: 1s;
+        -ms-transition-delay: 1s;
+        transition-delay: 1s;
+        -moz-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -o-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+    #header:after {
+      transition: -moz-opacity 1s ease;
+      transition: -webkit-opacity 1s ease;
+      transition: -o-opacity 1s ease;
+      transition: -ms-opacity 1s ease;
+      transition: opacity 1s ease;
+      background-image: linear-gradient(45deg, #4fa49a, #4361c2);
+      content: '';
+      height: 100%;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+  body.is-loading #header .inner {
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 0;
+  }
+
+    body.is-loading #header .inner .actions {
+      -moz-transform: translateY(30em);
+      -webkit-transform: translateY(30em);
+      -o-transform: translateY(30em);
+      -ms-transform: translateY(30em);
+      transform: translateY(30em);
+      opacity: 0;
+    }
+
+  body.is-loading #header:after {
+    opacity: 1;
+  }
+
+
+/* Navigation links to page section below */
+/*#page-navigation
+
+#portfolio
+
+#estimate
+
+#contact*/
+
+#header .actions {
+  margin: 2.5em 0 0 0;
+  position: relative;
+}
+
+#header .actions:after {
+  background: #ffffff;
+  content: '';
+  height: 100vh;
+  left: 50%;
+  position: absolute;
+  top: 100%;
+  width: 1px;
+}
+
+/*
+  ========================================
+  About Me
+  ========================================
+*/
+
+.image-featured {
+  float: right;
+}
+
+
+
+/*
+  ========================================
+  Portfolio
+  ========================================
+*/
+
+.row {
+  display: inline-block;
+}
+
+.landscape {
+  position: relative;
+}
+
+/*
+  ========================================
+  Estimate Quote
+  ========================================
+*/
+
+div .answer {
+  display: inline-block;
+  background-color: white;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+#sumPrice {
+  text-align: right;
+}
+       
