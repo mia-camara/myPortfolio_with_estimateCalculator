@@ -243,15 +243,86 @@
   ========================================
 */
 
+.jumbotron {
+  text-align: center;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-family: "Open Sans",sans-serif;
+}
+
+hr {
+  text-align: center;
+  border-bottom:2px solid #d5d5d5;
+  vertical-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width:30%; 
+  height:0.001px; 
+  background: #fff
+}
+
 div .answer {
   display: inline-block;
-  background-color: white;
-  -webkit-box-sizing: content-box;
+  font-family: "Abril Fatface";
+  font-size: 17px;
+  line-height: 1.42857143;
+  color: #333;
+  font-weight: bold;
+  text-align: center;  -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 
-#sumPrice {
+.sumPrice {
   text-align: right;
+  color: #253659;
+  font-weight: bold;
+  font-family: "Abril Fatface";
+  font-size: 17px;
 }
+
+#total.sumPrice {
+  text-align: center;
+  color: #253659;
+  font-style: bold;
+}
+
+.btn.btn-default {
+  margin: 40px;
+  margin-top: 45px;
+  width: 230px;
+  height: 50px;
+  font-size: 20px;
+  color: #ffffff;
+  border-color: #F2E76B;
+  background-color: #F2E76B;
+}
+
+.btn-circle.btn-xl {
+  width: 120px;
+  height: 120px;
+  padding: 10px 16px;
+  font-size: 40px;
+  line-height: 1.33;
+  border-radius: 65px;
+  margin: 20px;
+  color: #F2E76B;
+  border-color: #F2E76B;
+  background-color: #ffffff;
+}
+
+.glyphicon.glyphicon-play-circle {
+  margin-top: 1px;
+  margin-left: 12px;
+}
+
+.btn-default:hover {
+  color: #253659;
+  border-color: #253659;
+}
+
+
        
