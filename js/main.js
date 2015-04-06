@@ -18,7 +18,16 @@ var result = 0;
 		result += price;
 		$('.sumPrice').text("$" + result + ".00");
 	});
-	
+
+	$( "#banner" ).click(function() {
+	  $( ".image" ).animate({
+	    width: [ "toggle", "swing" ],
+	    height: [ "toggle", "swing" ],
+	    opacity: "toggle"
+	  }, 5000, "linear", function() {
+	    $( this ).after();
+	  });
+	});
 });
 
 	// $(document).on('click','.answer',function() {
