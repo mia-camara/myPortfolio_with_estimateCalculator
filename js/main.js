@@ -19,10 +19,10 @@ var result = 0;
 		$('.sumPrice').text("$" + result + ".00");
 	});
 
-	$( "#banner" ).click(function() {
+	$( "#banner" ).mouseover(function() {
 	  $( ".image" ).animate({
-	    width: [ "toggle", "swing" ],
-	    height: [ "toggle", "swing" ],
+	    width: [ "toggle", "spin" ],
+	    height: [ "toggle", "spin" ],
 	    opacity: "toggle"
 	  }, 5000, "linear", function() {
 	    $( this ).after();
