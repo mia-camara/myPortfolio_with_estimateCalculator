@@ -293,7 +293,6 @@ a:hover {
   margin-right: 0.5em;
 }
 
-
 /* Banner */
 
 #banner {
@@ -491,7 +490,7 @@ body {
   margin-top: 20px;
 }
 
-.image.fit:hover {
+/*.image.fit:hover {
   background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.85), rgba(23, 24, 32, 0.85));
   background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.85), rgba(23, 24, 32, 0.85));
   background-image: -o-linear-gradient(top, rgba(23, 24, 32, 0.85), rgba(23, 24, 32, 0.85));
@@ -504,7 +503,7 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-}
+}*/
 
 h6 {
   text-align: center;
@@ -665,7 +664,7 @@ div .answer {
 */
 
 form {
-  text-align: center;
+  text-align: left;
 }
 
 form label {
@@ -673,7 +672,6 @@ form label {
   text-align: left;
   margin-bottom: 0.5em;
 }
-
 
 form input[type="text"],
       form input[type="email"],
@@ -689,7 +687,7 @@ form input[type="text"],
   background: rgba(255,255,255,0.75);
   border-radius: 0.35em;
   padding: 0.75em 1em 0.75em 1em;
-  width: 175%;
+  width: 100%;
   box-shadow: inset 0 0.1em 0.1em 0 rgba(0,0,0,0.05);
   border: solid 1px rgba(0,0,0,0.15);
   -moz-transition: all 0.35s ease-in-out;
@@ -700,14 +698,8 @@ form input[type="text"],
   line-height: 1.25em;
 }
 
-form .6u {
-  width: 175%;
-  display: inline;
-}
-
-form .12u {
-  width: 350%;
-  display: block;
+input[type="radio"]{
+  padding: 10px;
 }
 
 form input[type="text"]:focus,
@@ -745,5 +737,18 @@ form :-ms-input-placeholder {
 
 form ::-moz-focus-inner {
   border: 0;
+}
+
+#radio-button h2 {
+  font-family: inherit;
+  font-size: 21px;
+  text-align: center;
+  color: #337ab7;
+}
+
+#radio-button input {
+  font-size: 21px;
+  text-align: center;
+  color: #337ab7;
 }
        

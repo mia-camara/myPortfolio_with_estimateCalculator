@@ -13,10 +13,21 @@ var result = 0;
 		x += 1;
 	});
 
+	$(document).on('click','.previousSlide',function() {
+		$('#slide-' + x).hide(1000);
+		$('#slide-' + (x - 1)).show(1000);
+		$(this).attr("value");
+		x -= 1;
+	});
+
 	$(document).on('click','.answer',function() {
 	var price = Number($(this).attr('data-price'));
 		result += price;
 		$('.sumPrice').text("$" + result + ".00");
+	});
+
+	$(document).on('click','#submit-form',function() {
+		alert('Thank You! I will be in touch soon.')
 	});
 
 	$( "#banner" ).mouseover(function() {
@@ -28,7 +39,31 @@ var result = 0;
 	    $( this ).after();
 	  });
 	});
+
+	function getRadioItem () {
+		chosen = ""
+		length = document.radio.length
+			for (var i = 0; i < length; i++) {
+				if (document.radio[i].checked) {
+					chosen = document.radio[i].value
+				}
+			}		if (chosen == "") {
+				alert ("No Location Chosen")
+			}
+			else {
+				alert(chosen);
+			}
+	}
+
+	getRadioItem(chosen);
+	chosen = document.radio[i].value
+
 });
+
+	// $('#submit-form').onClick function() {
+	// 	alert('Thank You! I will be in touch very soon.');
+	// }
+
 
 	// $(document).on('click','.answer',function() {
 	// var answer = $('.answer').attr('data-answer');
@@ -44,3 +79,13 @@ var result = 0;
 	// 	$($('.sumPrice')[i]).text("$" + result + ".00");
 	// }
 
+	// $("#img").rotate({ 
+ //   bind: 
+ //     { 
+ //        mouseover : function() { 
+ //            $(this).rotate({animateTo:180})
+ //        },
+ //        mouseout : function() { 
+ //            $(this).rotate({animateTo:0})
+ //        }
+ //     } 

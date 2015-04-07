@@ -61,7 +61,6 @@
     <div class="content">
       <span class="image"><img src="images/logo-240px.png" alt="" /></span>
     </div>
-<!--     <a href="#one" class="goto-next scrolly"></a> -->
   </section>
 
   <!-- About Me -->
@@ -159,7 +158,7 @@
       <div class="jumbotron">
 
       <header class="roll-in-header blue">
-        <center><h2><hr />ESTIMATOR<hr /></h2></center>
+        <center><h2>ESTIMATOR</h2></center>
       </header>
     
         <h2><hr />IN NEED OF GOOD<hr />DESIGN?<strong> HOW MUCH<hr />WILL IT COST?</strong><hr /></h2>
@@ -257,7 +256,7 @@
             <h1 id="total" class="sumPrice">
             $--.--
             </h1>
-          <p>You're one step closer to creative design.<br>Prices are quoted in Hong Kong Dollar<strong>Click below to get started</strong></p>
+          <p>You're one step closer to creative design.<br>Prices are quoted in Hong Kong Dollar.<br><strong>Click below to get started</strong></p>
         <button type="button" class="btn btn-default" aria-label="start-project"> START PROJECT 
           <span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span>
         </button>
@@ -277,25 +276,43 @@
       <div class="jumbotron">
 
       <header class="roll-in-header blue">
-        <center><h2><hr />CONTACT ME<hr /></h2></center>
+        <center><h2>CONTACT ME</h2></center>
       </header>
 
       <p>Thank you for getting in touch. <br> I look forward to assisting you with your new design.<br>Feel free to give me a detailed brief below.</p>
           
-      <form method="post" action="#">
-        <div class="row 50%">
-          <div class="6u"><input type="text" name="name" placeholder="Name" /></div>
-          <br>  
-          <div class="6u"><input type="text" name="email" placeholder="Email" /></div>
+      <form>
+        <div><input type="text" name="name" placeholder="Name" />
         </div>
         <br>
-        <div class="row 50%">
-          <div class="12u">
-            <textarea name="message" placeholder="Message"></textarea>
-          </div>
+        <div><input type="text" name="email" placeholder="Email" />
         </div>
+        <br>
+        <div><textarea name="message" placeholder="Message"></textarea>
+        </div>
+        <br>
+
+        <div id="radio-button"> 
+        <h2><hr />UPGRADE YOUR DESIGN &<hr /><strong>HIRE A DESIGNER PART TIME</strong><hr /></h2>
+          <p>Got a short term project you're working on? Tell me what is required and describe what you want designed.</p>
+          </div>
+
+        <div><textarea name="content-details" placeholder="Content Details"></textarea>
+        <br>
+
+        <p>How much time do you think you will need?</p>
+            <input type="radio" name="radioButton" value="Woah only $500 per hour"/> Per Hour
+            <input type="radio" name="radioButton" value="Ok $2000 per day"/> Per Day
+            <input type="radio" name="radioButton" value="Hmmm, not bad $8000 per week"/> Per Week
+            <input type="radio" name="radioButton" value="Bargain! $25000 per month"/> Per Month
+            <input type="radio" name="radioButton" value="No problem, we can talk"/> Not Sure
+        </div>
+        <br>
+        
+        <p>Do you have any images, sketches or documents that might be helpful?</p><button id="choose-file">Choose File</button>
       </form>
-        <button type="button" class="btn btn-default" aria-label="submit-form"> SUBMIT FORM
+
+        <button id="submit-form" type="button" class="btn btn-default" aria-label="submit-form"> SUBMIT FORM
         </button>
       </div>
     </div>
