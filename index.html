@@ -43,12 +43,12 @@
 
   <!-- Header -->
   <header id="header" class="one">
-    <h1 id="logo"><a href="#about">welcome</a></h1>
+    <h1 id="welcome"><a href="#about">welcome</a></h1>
       <nav id="nav">
         <ul>
           <li><a href="#portfolio">/  portfolio</a></li>
           <li>
-            <a href="#estimate">/  design cost estimate</a>
+            <a href="#estimate">/  design estimator</a>
           </li>
           <li><a href="#contact"> /  contact </a></li>
           <li><a href="https://www.linkedin.com/pub/mia-da-camara/11/161/541" class="button special"> +  follow me</a></li>
@@ -59,7 +59,7 @@
   <!-- Banner -->
   <section id="banner">
     <div class="content">
-      <span class="image"><img src="images/logo-240px.png" alt="" /></span>
+      <span class="logo"><img src="images/logo-240px.png" alt="" /></span>
     </div>
   </section>
 
@@ -158,7 +158,7 @@
       <div class="jumbotron">
 
       <header class="roll-in-header blue">
-        <center><h2>ESTIMATOR</h2></center>
+        <center><h2>DESIGN ESTIMATOR</h2></center>
       </header>
     
         <h2><hr />IN NEED OF GOOD<hr />DESIGN?<strong> HOW MUCH<hr />WILL IT COST?</strong><hr /></h2>
@@ -172,11 +172,18 @@
 
   <div id="slide-2" class="slide">
     <div class="container">
-      <div class="jumbotron">
+      <div class="jumbotron"> 
         <div class="previousSlide">
-          <a href="#slide-1"> <  start again</a>
-        </div>      
+          <a href="#slide-1"> ←  start again</a>
+          <div class="sumPrice">
+          subtotal $0
+          </div>
+        </div>   
+
+          <p>DESIGN ESTIMATOR</p>
           <h2><hr />WHAT TYPE OF<hr />DESIGN<strong> ARE YOU<hr />LOOKING FOR?</strong><hr /></h2>
+        
+
         <div class="answer" data-price="100">
           <button type="button" class="btn btn-default btn-circle btn-xl"><i class="glyphicon glyphicon-text-color"></i></button><br>Logo
         </div>
@@ -196,13 +203,15 @@
 
   <div id="slide-3" class="slide">
     <div class="container">
-      <div class="jumbotron">
-        <div class="sumPrice">
-          $0
-        </div>
+      <div class="jumbotron"> 
         <div class="previousSlide">
-          <a href="#slide-2"> < previous slide</a>
-        </div>
+          <a href="#slide-2"> ←  previous slide</a>
+          <div class="sumPrice">
+          subtotal $0
+          </div>
+        </div>   
+
+          <p>DESIGN ESTIMATOR</p>
           <h2><hr />WHAT IS THE <hr />PRIMARY <strong> USE FOR<hr /> YOUR DESIGN?</strong><hr /></h2>
         <div class="answer" data-price="100">
           <button type="button" class="btn btn-default btn-circle btn-xl"><i class="glyphicon glyphicon-file"></i></button><br>Print
@@ -222,14 +231,17 @@
 
   <div id="slide-4" class="slide">
     <div class="container">
-      <div class="jumbotron">
-        <div class="sumPrice">
-          $0
-        </div>
+      <div class="jumbotron"> 
         <div class="previousSlide">
-          <a href="#slide-3"> < previous slide</a>
-        </div>
+          <a href="#slide-3"> ←  previous slide</a>
+          <div class="sumPrice">
+          subtotal $0
+          </div>
+        </div>   
+
+          <p>DESIGN ESTIMATOR</p>
           <h2><hr />ANY ADDITIONAL<hr /><strong> REQUIREMENTS YOU<hr />MAY NEED?</strong><hr /></h2>
+
         <div class="answer" data-price="100">
           <button type="button" class="btn btn-default btn-circle btn-xl"><i class="glyphicon glyphicon-barcode"></i></button><br>Packaging
         </div>
@@ -308,7 +320,7 @@
             <input type="radio" name="radioButton" value="No problem, we can talk"/> Not Sure
         </div>
         <br>
-        
+
         <p>Do you have any images, sketches or documents that might be helpful?</p><button id="choose-file">Choose File</button>
       </form>
 

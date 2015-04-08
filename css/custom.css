@@ -260,7 +260,7 @@
 }
 
 a:hover {
-  color: #F2E76B;
+  color: #337ab7;
   text-decoration: none;
 }
 
@@ -552,20 +552,25 @@ div .answer {
   box-sizing: content-box;
 }
 
+.previousSlide p {
+  font-size: 25px;
+}
+
+.previousSlide a {
+  text-align: left;
+  color: #337ab7;
+  font-weight: bold;
+  font-family: "Abril Fatface";
+  float: left;
+  font-size: 20px;
+}
+
 .sumPrice {
   text-align: right;
   color: #337ab7;
   font-weight: bold;
   font-family: "Abril Fatface";
-  font-size: 25px;
-}
-
-.previousSlide {
-  text-align: left;
-  color: #337ab7;
-  font-weight: bold;
-  font-family: "Abril Fatface";
-  font-size: 25px;
+  font-size: 20px;
 }
 
 #total.sumPrice {
