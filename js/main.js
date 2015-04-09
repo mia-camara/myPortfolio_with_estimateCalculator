@@ -26,34 +26,20 @@ var result = 0;
 		$('.sumPrice').text("$" + result + ".00");
 	});
 
+	$(document).on('click','#submit-form',function() {
+		alert('Thank You! I will be in touch soon.');
+	});
+
+	// function printRadioCheckedValue(radio_button) {
+ //   		var radio = document.forms[1].elements[radio_button];
+ 
+ //   		for(var i = 0; i < 5; i++) {
+ //      		if(radio[i].checked) {
+ //         	console.log(radio[i].value);
+ //      		}
+ //   			}
+ 
+ //   			return ('');
+	// 		}
+
 });
-
-	// function submit-form(e) {
-	// alert('Thank You!');
-	// }
-
-	// $( "#banner" ).mouseover(function() {
-	//   $( ".image" ).animate({
-	//     width: [ "toggle", "spin" ],
-	//     height: [ "toggle", "spin" ],
-	//     opacity: "toggle"
-	//   }, 5000, "linear", function() {
-	//     $( this ).after();
-	//   });
-	// });
-
-
-	// $(document).on('click','.answer',function() {
-	// var answer = $('.answer').attr('data-answer');
-	// var price = Number($('.answer').attr('data-price'));
-
-	// 	$(this).attr("data-answer");
-	// 	$(this).attr("data-price");
-
-	// 	result += price;
-	// });
-
-	// for (var i = 0; i <= 3; i++) {
-	// 	$($('.sumPrice')[i]).text("$" + result + ".00");
-	// }
-

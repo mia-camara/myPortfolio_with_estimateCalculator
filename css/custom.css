@@ -420,6 +420,11 @@ body {
   color: grey;
 }
 
+p {
+  font-weight: 200;
+  margin: 0px 46px 0px 19px;
+}
+
 /*
   ========================================
   About Me
@@ -744,16 +749,23 @@ form ::-moz-focus-inner {
   border: 0;
 }
 
-#radio-button h2 {
+#part-time-label h2 {
   font-family: inherit;
   font-size: 21px;
   text-align: center;
   color: #337ab7;
 }
 
-#radio-button input {
-  font-size: 21px;
+#radio-button {
+  font-size: 16px;
   text-align: center;
   color: #337ab7;
+  margin-left: -3px;
+}
+
+#choose-file:hover {
+  color: white;
+  border-color: #337ab7;
+  background-color: #337ab7;
 }
        
